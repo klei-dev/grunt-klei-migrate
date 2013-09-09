@@ -1,0 +1,27 @@
+{
+  "name": "grunt-klei-migrate",
+  "description": "A gruntplugin for klei-migrate",
+  "version": "0.1.0",
+  "author": "Joakim Bengtson <joakim@klei.se>",
+  "repository":"klei-dev/grunt-klei-migrate",
+  "licenses": "MIT",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "klei-migrate": "~0.2.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt": "~0.4.1"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "keywords": [
+    "gruntplugin",
+    "migrate",
+    "migration"
+  ]
+}
