@@ -6,9 +6,6 @@
   "repository":"klei-dev/grunt-klei-migrate",
   "licenses": "MIT",
   "main": "Gruntfile.js",
-  "scripts": {
-    "test": "grunt test"
-  },
   "dependencies": {
     "klei-migrate": "~0.2.0"
   },
