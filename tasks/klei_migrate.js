@@ -33,6 +33,8 @@ module.exports = function(grunt) {
       command = this.target;
     }
 
+    migrate.env(grunt.option('env') || options.env);
+
     migrate.limit(grunt.option('limit') || options.limit);
 
     migrate.timeout((grunt.option('timeout') || options.timeout) * 1000);

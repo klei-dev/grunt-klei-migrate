@@ -43,6 +43,13 @@ Default value: `run` or target name (if valid command name)
 
 The `klei-migrate` command to run, valid commands are: `run`, `dry` and `create` (see [klei-migrate](http://github.com/klei-dev/migrate) for more information)
 
+#### options.env
+Type: `String`
+Default value: process.env.NODE_ENV or `development`
+
+Sets the current environment name.
+Can also be provided with `--env` parameter on execution.
+
 #### options.down
 Type: `Boolean`
 Default value: `false`
