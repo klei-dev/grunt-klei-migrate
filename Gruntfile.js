@@ -38,7 +38,8 @@ module.exports = function(grunt) {
           limit: 1,
           down: true
         }
-      }
+      },
+      sync: ""
     }
   });
 

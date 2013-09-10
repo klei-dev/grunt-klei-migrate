@@ -85,6 +85,30 @@ Default value: `30`
 Limit max execution time, for each migration, in seconds.
 Can also be provided with `--timeout` parameter on execution.
 
+#### options.fromBranch
+Type: `String`
+Default value: `NULL`
+
+Sets fromBranch argument for the `sync` command.
+Can also be provided with `--fromBranch` parameter on execution.
+**Only used** if no argument is provided.
+
+#### options.fromRef
+Type: `String`
+Default value: `NULL`
+
+Sets fromRef argument for the `post_checkout` command.
+Can also be provided with `--fromRef` parameter on execution.
+**Only used** if no argument is provided.
+
+#### options.toRef
+Type: `String`
+Default value: `NULL`
+
+Sets toRef argument for the `post_checkout` command.
+Can also be provided with `--toRef` parameter on execution.
+**Only used** if no argument is provided.
+
 ### Usage Examples
 
 #### Simple configuration
