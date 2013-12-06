@@ -13,16 +13,14 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
 
-    clean: {
-      migrations: ['migrations'],
-    },
+    clean: ['migrations'],
 
     // Configuration to be run (and then tested).
     klei_migrate: {
       run: "",
       create: {
         options: {
-          template: 'test/<your migration template>'
+          template: 'test/dummy.tpl'
         }
       },
       dry: "",
@@ -39,12 +37,18 @@ module.exports = function(grunt) {
           down: true
         }
       },
-      sync: ""
+      sync: {
+        options: {
+          fromBranch: 'master'
+        }
+      }
     }
   });
 
   grunt.loadTasks('tasks');
 
   grunt.loadNpmTasks('grunt-contrib-clean');
+
+  grunt.registerTask('default', ['clean', 'klei_migrate']);
 
 };
